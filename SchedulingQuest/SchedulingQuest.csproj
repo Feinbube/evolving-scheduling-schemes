@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{32FDBF9B-DA71-4EC0-B909-83D246731576}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SchedulingQuest</RootNamespace>
+    <AssemblyName>SchedulingQuest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Challenges\Quality\LLURMS.cs" />
+    <Compile Include="Challenges\Stress\PeriodicChallenges.cs" />
+    <Compile Include="Challenges\TestSet.cs" />
+    <Compile Include="Program\CompactCSV.cs" />
+    <Compile Include="Math.cs" />
+    <Compile Include="Program\CompactView.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Program\SearchOptimum.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registry.cs" />
+    <Compile Include="Scheduler\Algorithms\Optimums.cs" />
+    <Compile Include="Scheduler\Auto\Auto.cs" />
+    <Compile Include="Scheduler\Algorithms\SoD.cs" />
+    <Compile Include="Scheduler\Algorithms\StateOfTheArt.cs" />
+    <Compile Include="Scheduler\Auto\ConfigurableScheduler.cs" />
+    <Compile Include="Scheduler\Schedule.cs" />
+    <Compile Include="Scheduler\Scheduler.cs" />
+    <Compile Include="Challenges\Quality\SyntheticUtilization.cs" />
+    <Compile Include="Challenges\Quality\RMS.cs" />
+    <Compile Include="Challenges\Quality\WikiRMS.cs" />
+    <Compile Include="Challenges\Quality\ToyExample.cs" />
+    <Compile Include="Challenges\Quality\Lemma3.cs" />
+    <Compile Include="Challenges\Quality\Dhall.cs" />
+    <Compile Include="Challenges\Quality\SlackDhall.cs" />
+    <Compile Include="Challenges\Challenge.cs" />
+    <Compile Include="Scheduler\Algorithms\S7D.cs" />
+    <Compile Include="Challenges\Stress\AnderssonChallenges.cs" />
+    <Compile Include="Challenges\Stress\StressChallenge.cs" />
+    <Compile Include="Challenges\Stress\WeirdChallenges.cs" />
+    <Compile Include="Challenges\Stress\EasyChallenges.cs" />
+    <Compile Include="Scheduler\Task.cs" />
+    <Compile Include="Challenges\TestResult.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
