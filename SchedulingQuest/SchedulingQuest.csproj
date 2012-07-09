@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Challenges\Quality\LLURMS.cs" />
+    <Compile Include="Challenges\Complete\CompleteChallenges.cs" />
+    <Compile Include="Challenges\Complete\CompleteChallengeTree.cs" />
     <Compile Include="Challenges\Stress\PeriodicChallenges.cs" />
     <Compile Include="Challenges\TestSet.cs" />
     <Compile Include="Program\CompactCSV.cs" />

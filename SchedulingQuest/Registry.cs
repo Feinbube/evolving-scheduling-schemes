@@ -49,8 +49,9 @@ namespace SchedulingQuest
             //challenges.Add(new EasyStress());
 
             //challenges.Add(new PeriodicChallenges());
+            challenges.Add(new CompleteChallenges());
 
-            challenges.Add(new WeirdChallenges());
+            //challenges.Add(new WeirdChallenges());
 
             //challenges.Add(new Andersson_005());
             //challenges.Add(new Andersson_010());
@@ -65,7 +66,7 @@ namespace SchedulingQuest
 
         public static List<int> ProcessorCounts()
         {
-            return new List<int> { 1, 2, 4, 7, 8, 10, 12, 13, 16};//, 20, 24, 25, 32, 50, 64};
+            return new List<int> { 1, 2, 4 }; //, 7, 8, 10, 12 }; //, 13, 16};//, 20, 24, 25, 32, 50, 64};
         }
     }
 }

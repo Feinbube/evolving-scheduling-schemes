@@ -10,7 +10,7 @@ namespace SchedulingQuest
         static void Main(string[] args)
         {
             CompactView.Run();
-            // CompactCSV.Run();
+            //CompactCSV.Run();
 
             //SearchOptimum.Run(true);
         }
