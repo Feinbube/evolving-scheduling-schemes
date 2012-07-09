@@ -24,7 +24,7 @@ namespace SchedulingQuest
         {
             List<Task> taskSet = new List<Task>();
 
-            for (int i = 0; i < m + 1; i++)
+            for (int i = 0; i < m; i++)
                 taskSet.Add(new Task(i, 0, t1D, t1C));
 
             taskSet.Add(new Task(m + 1, 0, tnD, tnC));
