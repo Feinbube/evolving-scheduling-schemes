@@ -33,6 +33,11 @@ namespace SchedulingQuest
                     }
         }
 
+        private bool canBeSolved(Schedule schedule)
+        {
+            throw new NotImplementedException();
+        }
+
         protected override List<Schedule> generateSchedules(int m)
         {
             int targetUtilization = 8; // target/max 

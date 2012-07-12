@@ -9,7 +9,8 @@ namespace SchedulingQuest
     {
         static void Main(string[] args)
         {
-            CompactView.Run();
+            ForAnton.Run();
+            //CompactView.Run();
             //CompactCSV.Run();
 
             //SearchOptimum.Run(true);

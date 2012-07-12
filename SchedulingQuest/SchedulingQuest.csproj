@@ -52,6 +52,7 @@
     <Compile Include="Math.cs" />
     <Compile Include="Program\CompactView.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Program\ForAnton.cs" />
     <Compile Include="Program\SearchOptimum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registry.cs" />

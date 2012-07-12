@@ -12,17 +12,17 @@ namespace SchedulingQuest
             List<Scheduler> schedulers = new List<Scheduler>();
 
             schedulers.Add(new ConfigurableSchedulerM((t, m) => t.S / t.D, "S/D"));
-            schedulers.Add(new ConfigurableSchedulerM((t, m) => t.S*t.S / t.D, "S²/D"));
+            schedulers.Add(new ConfigurableSchedulerM((t, m) => t.S*t.S / t.D, "S^2/D"));
 
             schedulers.Add(new ConfigurableSchedulerM((t, m) => 1 / t.AD, "1/AD"));
-            schedulers.Add(new ConfigurableSchedulerM((t, m) => (t.S + t.A) * (t.S + t.A) / t.AD, "(S+A)²/AD"));
+            schedulers.Add(new ConfigurableSchedulerM((t, m) => (t.S + t.A) * (t.S + t.A) / t.AD, "(S+A)^2/AD"));
             schedulers.Add(new ConfigurableSchedulerM((t, m) => Math.Pow(t.S, m) / t.D, "S^m/D"));
 
             schedulers.Add(new ConfigurableSchedulerM((t, m) => Math.Pow((t.S + t.A), m) / t.AD, "(S+A)^m/AD"));
             schedulers.Add(new ConfigurableSchedulerM((t, m) => Math.Pow((t.S + t.A), m + 1) / t.AD, "(S+A)^(m+1)/AD"));
             schedulers.Add(new ConfigurableSchedulerM((t, m) => Math.Pow((t.S + t.A), m * 2 - 2) / t.AD, "(S+A)^(m*2-2)/AD"));
             schedulers.Add(new ConfigurableSchedulerM((t, m) => Math.Pow((t.S + t.A), m * 2) / t.AD, "(S+A)^(m*2)/AD"));
-            schedulers.Add(new ConfigurableSchedulerM((t, m) => Math.Pow((t.S + t.A), (m + 1) * (m + 1)) / t.AD, "(S+A)^((m+1)²)/AD"));
+            schedulers.Add(new ConfigurableSchedulerM((t, m) => Math.Pow((t.S + t.A), (m + 1) * (m + 1)) / t.AD, "(S+A)^((m+1)^2)/AD"));
             schedulers.Add(new ConfigurableSchedulerM((t, m) => Math.Pow((t.S + t.A), m * 2 + 4) / t.AD, "(S+A)^(m*2+4)/AD"));
             schedulers.Add(new ConfigurableSchedulerM((t, m) => Math.Pow((t.S + t.A), (m * m) * 2) / t.AD, "(S+A)^(m*m*2)/AD"));
             schedulers.Add(new ConfigurableSchedulerM((t, m) => Math.Pow((t.S + t.A), m * 2 + 16) / t.AD, "(S+A)^(m*2+16)/AD"));

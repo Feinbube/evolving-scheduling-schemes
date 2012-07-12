@@ -9,7 +9,7 @@ namespace SchedulingQuest
     {
         public static void Run()
         {
-            //runChallenges(Registry.QualityChallenges());
+            runChallenges(Registry.QualityChallenges());
             runChallenges(Registry.StressChallenges());
         }
 

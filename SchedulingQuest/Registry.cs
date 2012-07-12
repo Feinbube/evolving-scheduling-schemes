@@ -49,7 +49,7 @@ namespace SchedulingQuest
             //challenges.Add(new EasyStress());
 
             //challenges.Add(new PeriodicChallenges());
-            challenges.Add(new CompleteChallenges());
+            //challenges.Add(new CompleteChallenges());
 
             //challenges.Add(new WeirdChallenges());
 
