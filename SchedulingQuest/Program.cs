@@ -9,11 +9,13 @@ namespace SchedulingQuest
     {
         static void Main(string[] args)
         {
-            ForAnton.Run();
+            //ForAnton.Run();
+            //DetailedSchedule.Run();
+            
             //CompactView.Run();
             //CompactCSV.Run();
 
-            //SearchOptimum.Run(true);
+            SearchOptimum.Run(true);
         }
     }
 }

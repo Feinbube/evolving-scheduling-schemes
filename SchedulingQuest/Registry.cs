@@ -30,14 +30,17 @@ namespace SchedulingQuest
         {
             List<Challenge> challenges = new List<Challenge>();
 
-            challenges.Add(new SyntheticUtilization());
-            challenges.Add(new SlackDhall());
+            //challenges.Add(new SyntheticUtilization());
+            //challenges.Add(new SlackDhall());
             challenges.Add(new Dhall());
-            challenges.Add(new Lemma3());
-            challenges.Add(new ToyExample());
-            challenges.Add(new WikiRMS());
+            //challenges.Add(new Lemma3());
+            //challenges.Add(new ToyExample());
+            //challenges.Add(new WikiRMS());
             challenges.Add(new RMS());
+
             //challenges.Add(new LLURMS());
+
+            //challenges.Add(new CompleteChallenges());
 
             return challenges;
         }
@@ -54,7 +57,7 @@ namespace SchedulingQuest
             //challenges.Add(new WeirdChallenges());
 
             //challenges.Add(new Andersson_005());
-            //challenges.Add(new Andersson_010());
+            challenges.Add(new Andersson_010());
             //challenges.Add(new Andersson_020());
             //challenges.Add(new Andersson_050());
             //challenges.Add(new Andersson_100());

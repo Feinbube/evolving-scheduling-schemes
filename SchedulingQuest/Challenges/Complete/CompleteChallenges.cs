@@ -24,7 +24,7 @@ namespace SchedulingQuest
                         List<Task> clone = new List<Task>();
                         clone.AddRange(taskset);
                         clone.Add(new Task(taskset.Count + 1, A, D, C));
-                        Schedule schedule = new Schedule(taskset, m, true);
+                        Schedule schedule = new Schedule(clone, m, true);
                         if (canBeSolved(schedule))
                         {
                             schedules.Add(schedule);
@@ -40,10 +40,9 @@ namespace SchedulingQuest
 
         protected override List<Schedule> generateSchedules(int m)
         {
-            int targetUtilization = 8; // target/max 
-            int maxUtilization = 10;
-
-            return CompleteChallengeTree.GetSchedules(targetUtilization, maxUtilization, maxUtilization, m);
+            List<Schedule> result = new List<Schedule>();
+            generateSchedules(result, new List<Task>(), m, 8, 10);
+            return result;
         }
     }
 }

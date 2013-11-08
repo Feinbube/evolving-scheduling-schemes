@@ -18,8 +18,8 @@ namespace SchedulingQuest
             List<Challenge> challenges = new List<Challenge>() { 
                 // new Dhall(), new SlackDhall(), new Lemma3(), new ToyExample(), new WikiRMS(), new RMS(), new LLURMS(),
                 //new WeirdChallenges(), 
-                //new Andersson_050()
-                new PeriodicChallenges()
+                new Andersson_050()
+                //new PeriodicChallenges()
             };
 
             HashSet<Scheduler> schedulers = new HashSet<Scheduler>();
